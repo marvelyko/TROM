@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TROM - System control</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+</head>
+
+<body class="background-color">
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <img src="assets/images/logo.png">
+        </a>
+        <div class="header-info">
+            <p>Balance: 100,000 DC</p>
+            <a href="personalinfo.html" class="header-user">
+                <img src="assets/images/user.png" alt="user">
+                <p>Tengiz</p>
+            </a>
+        </div>
+
+    </header>
+    <div id="map"></div>
+    <ul class="buttons-control">
+        <li><button>Single location</button></li>
+        <li><button>Live location</button></li>
+        <li><button>Bike control</button></li>
+        <li><button>Alarm control</button></li>
+    </ul>
+
+    <script src="assets/js/map.js"> </script>
+</body>
+
+</html>

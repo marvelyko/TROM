@@ -1,0 +1,447 @@
+body {
+    background: #20222E;
+}
+
+.background-color {
+    background-color: #20222e;
+
+}
+
+.background {
+    position: relative;
+    background-image: url("../images/background.jpg");
+    background-color: #20222e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    background-color: #20222e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    height: 60px;
+}
+
+/* Main Index Page */
+
+.navigation {
+    position: absolute;
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.navigation li {
+    margin: 30px 0;
+    cursor: pointer;
+    font-family: 'JejuHallasan';
+}
+
+
+.registration-popup,
+.auth-popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #20222E;
+    padding: 20px 50px;
+    max-width: 400px;
+}
+
+.registration-popup h2,
+.auth-popup h2 {
+    color: #fff;
+    font-family: 'JejuHallasan';
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-popup input,
+.auth-popup input {
+    background: none;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+    outline: none;
+    color: #fff;
+    font-family: 'JetBrainsMono';
+}
+
+.registration-popup ::placeholder,
+.auth-popup ::placeholder {
+    color: rgba(255, 255, 255, 0.842);
+    font-family: 'JetBrainsMono';
+}
+
+.registration-popup button,
+.auth-popup button {
+    height: 30px;
+    background: #0019ad;
+    border: none;
+    color: #fff;
+    font-family: 'JetBrainsMono';
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.register-soc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'JetBrainsMono';
+}
+
+.register-soc a {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 15px 0 0 0;
+}
+
+.register-soc a:first-child {
+    background: #D9D9D9;
+    color: #20222E;
+}
+
+.register-soc a:last-child {
+    background: #0011afc0;
+    color: #fff;
+}
+
+.register-soc a p {
+    font-size: 14px;
+    margin-left: 5px;
+    padding: 4px;
+}
+
+.register-soc img {
+    height: 20px;
+}
+
+.close,
+.close2 {
+    display: inline-block;
+    color: #fff;
+    float: right;
+    font-family: 'JejuHallasan';
+    cursor: pointer;
+}
+
+#regModal {
+    display: none;
+}
+
+#logModal {
+    display: none;
+}
+
+
+/* About us Page */
+
+.aboutus-box {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.aboutus-box div {
+    flex: 50%;
+}
+
+.right-side {
+    margin-right: 50px;
+}
+
+.left-side {
+    margin-left: 50px;
+    text-align: right;
+}
+
+.aboutus-box h2 {
+    font-family: 'JejuHallasan';
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.aboutus-box p {
+    font-family: 'JetBrainsMono';
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.aboutus-box img {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+
+/* Personal Page */
+
+#map {
+    height: 90vh;
+    position: relative;
+    outline: none;
+}
+
+.buttons-control {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    position: absolute;
+    z-index: 1000;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons-control button {
+    font-family: 'JetBrainsMono';
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #b5b5b5;
+    color: #20222a;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.buttons-control button:hover {
+    background: #20222a;
+    color: #fff;
+}
+
+.header-user {
+    float: right;
+    display: flex;
+    padding: 20px;
+}
+
+.header-user img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-info p {
+    color: #fff;
+    font-family: 'JetBrainsMono';
+    padding: 25px 20px;
+    font-size: 12px;
+}
+
+.header-user p {
+    color: #fff;
+    font-family: "JejuHallasan";
+    font-size: 16px;
+    padding: 2px;
+}
+
+/* Personal Info */
+
+.personal-balance {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+.tab {
+    margin: 10px 0;
+}
+
+.tab button {
+    background: none;
+    color: #fff;
+    font-family: 'JetBrainsMono';
+    outline: none;
+    border: none;
+    padding: 0;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.tab button:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.tab button.active {
+    border-bottom: 1px solid #fff;
+}
+
+.tabcontent {
+    margin-top: 20px;
+}
+
+.user-profile-pic img {
+    height: 200px;
+    margin: 40px;
+    margin-top: 0;
+}
+
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-info {
+    color: #fff;
+    font-family: 'JetBrainsMono';
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.user-info p {
+    margin-bottom: 10px;
+}
+
+.dinamic-info {
+    width: 200px;
+    margin-top: 150px;
+}
+
+.dinamic-info input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 0 5px 0;
+    outline: none;
+    color: #fff;
+    font-family: 'JetBrainsMono';
+}
+
+.dinamic-info input::placeholder {
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-family: 'JetBrainsMono';
+    opacity: 0.8;
+}
+
+#submit {
+    background: #d9d9d9;
+    color: #20222a;
+    font-family: 'JejuHallasan';
+    border: none;
+    padding: 5px 10px;
+    width: auto;
+    float: right;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Balance / Payment */
+
+.balance-payment {
+    font-family: 'JetBrainsMono';
+    color: #fff;
+    display: none;
+}
+
+.balance-desc p {
+    margin-bottom: 30px;
+}
+
+.balance-desc p:last-child {
+    color: #00BFAF;
+    border: 1px solid #00BFAF;
+    padding: 10px;
+}
+.payradio {
+    margin-bottom: 20px;
+}
+.payradio p {
+    margin-bottom: 20px;
+}
+
+.payradio input {
+    margin-bottom: 10px;
+}
+.payradio div{
+    cursor: pointer;
+    display: inline-block;
+}
+.paymentbank{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.payment-process{
+    flex:50%;
+    background-color: none;
+    padding: 0 20px;
+}
+.payment-process > div{
+    display: none;
+}
+.bog-payment {
+    
+}
+
+.tbc-payment {
+    
+}
+
+.usdctrc20-payment, .usdcbep20-payment, .usdcpolygon-payment, .usdttrc20-payment  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.qrcode img{
+    height: 200px;
+    margin: 20px 0;
+}
+.walletaddress{
+    display: flex;
+    flex-wrap: wrap;
+}
+.walletaddress input{
+    margin-top: 20px;
+    background: none;
+    border: 1px solid #fff;
+    outline: none;
+    padding: 5px;
+    color: #fff;
+    font-family: 'JetBrainsMono';
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}

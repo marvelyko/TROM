@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'JejuHallasan';
+    src:url('../fonts/JejuHallasan.ttf.woff') format('woff'),
+        url('../fonts/JejuHallasan.ttf.svg#JejuHallasan') format('svg'),
+        url('../fonts/JejuHallasan.ttf.eot'),
+        url('../fonts/JejuHallasan.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src:url('../fonts/JetBrainsMono-Regular.woff') format('woff'),
+        url('../fonts/JetBrainsMono-Regular.ttf') format('truetype'),
+        url('../fonts/JetBrainsMono-Regular.eot'),
+        url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}

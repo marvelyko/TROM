@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TROM - User Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="background-color">
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <img src="assets/images/logo.png">
+        </a>
+        <div class="header-info">
+            <p>Balance: 100,000 DC</p>
+            <a href="personalinfo.html" class="header-user">
+                <img src="assets/images/user.png" alt="user">
+                <p>Tengiz</p>
+            </a>
+        </div>
+    </header>
+    <div class="personal-balance">
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'Info')">Personal information</button>
+            <button class="tablinks" onclick="openTab(event, 'Balance')">Balanace/Payment</button>
+        </div>
+        <div id="Info" class="tabcontent personal-info">
+            <div class="user-profile-pic">
+                <img src="assets/images/user.png" alt="profilepic">
+            </div>
+            <div class="user-info">
+                <div class="static-info">
+                    <p>Tengiz Pataraia</p>
+                    <p>Drive license: A</p>
+                    <p>Model of bike: Kawasaki Ninja</p>
+                </div>
+                <div class="dinamic-info">
+                    <input type="text" placeholder="Name" name="name" id="">
+                    <input type="text" placeholder="Drive license" name="drivelicense" id="">
+                    <input type="text" placeholder="Model of bike" name="bikemodel" id="">
+                    <input type="password" placeholder="Password" name="password" id="">
+                    <input type="password" placeholder="Re-password" name="repassword" id="">
+                    <input type="password" placeholder="Old password" name="oldpassword" id="">
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+        <div id="Balance" class="tabcontent balance-payment">
+            <div>
+                <div class="balance-desc">
+                    <p>Current balance: 996129 DC </p>
+                    <p>To use the service, you need to have DC currency on your balance, which you can buy with the help
+                        of
+                        our
+                        platform. $1 = 100,000 DC</p>
+                </div>
+                <div class="paymentbank">
+                    <form class="payradio" action="/action_page.php">
+                        <p>Payment with credit card:</p>
+                        <div onclick="openPay(event, 'bog-pay')">
+                            <input type="radio" id="bog" name="payment" value="BOG">
+                            <label for="bog">Bank of Georgia</label><br>
+                        </div><br>
+                        <div onclick="openPay(event, 'tbc-pay')">
+                            <input type="radio" id="tbc" name="payment" value="TBC">
+                            <label for="tbc">TBC Bank</label><br>
+                        </div><br>
+
+                        <br>
+
+                        <p>Payment with crypto:</p>
+                        <div onclick="openPay(event, 'usdctrc')">
+                            <input type="radio" id="usdctrc20" name="payment" value="USDCTRC20">
+                            <label for="usdctrc20">USDC / TRC20</label><br>
+                        </div><br>
+                        <div onclick="openPay(event, 'usdcbep')" >
+                            <input type="radio" id="usdcbep20" name="payment" value="USDCBEP20">
+                            <label for="usdcbep20">USDC / BEP20</label><br>
+                        </div><br>
+                        <div onclick="openPay(event, 'usdcpol')">
+                            <input type="radio" id="usdcpolygon" name="payment" value="USDCPOLYGON">
+                            <label for="usdcpolygon">USDC / Polygon</label><br>
+                        </div><br>
+                        <div onclick="openPay(event, 'usdttrc')">
+                            <input type="radio" id="usdttrc20" name="payment" value="USDTTRC20">
+                            <label for="usdttrc20">USDT / TRC20</label><br>
+                        </div><br>
+                    </form>
+                    <div class="payment-process">
+                        <div id="bog-pay" class="paycontent bog-payment">
+
+
+                        </div>
+                        <div id="tbc-pay" class="paycontent tbc-payment">
+
+                        </div>
+                        <div id="usdctrc" class="paycontent usdctrc20-payment">
+                            <div class="qrcode">
+                                <p>Scan QR code:</p>
+                                <img src="assets/images/qr.png" alt="QRCode">
+                            </div>
+                            <div>
+                                <p>Wallet address:</p>
+                                <div class="walletaddress">
+                                    <input type="text" value="13jmdXdpxf2UtvVLCJUcdgiScy7U2iVUXr3mQbwKB3j7FSVkEHm" id="myInput">
+                                    <button id="submit" onclick="myWalletAddress()">Copy</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="usdcbep" class="paycontent usdcbep20-payment">
+                            <div class="qrcode">
+                                <p>Scan QR code:</p>
+                                <img src="assets/images/qr.png" alt="QRCode">
+                            </div>
+                            <div>
+                                <p>Wallet address:</p>
+                                <div class="walletaddress">
+                                    <input type="text" value="13jmdXdpxf2UtvVLCJUcdgiScy7U2iVUXr3mQbwKB3j7FSVkEHm" id="myInput">
+                                    <button id="submit" onclick="myWalletAddress()">Copy</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="usdcpol" class="paycontent usdcpolygon-payment">
+                            <div class="qrcode">
+                                <p>Scan QR code:</p>
+                                <img src="assets/images/qr.png" alt="QRCode">
+                            </div>
+                            <div>
+                                <p>Wallet address:</p>
+                                <div class="walletaddress">
+                                    <input type="text" value="13jmdXdpxf2UtvVLCJUcdgiScy7U2iVUXr3mQbwKB3j7FSVkEHm" id="myInput">
+                                    <button id="submit" onclick="myWalletAddress()">Copy</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="usdttrc" class="paycontent usdttrc20-payment">
+                            <div class="qrcode">
+                                <p>Scan QR code:</p>
+                                <img src="assets/images/qr.png" alt="QRCode">
+                            </div>
+                            <div>
+                                <p>Wallet address:</p>
+                                <div class="walletaddress">
+                                    <input type="text" value="13jmdXdpxf2UtvVLCJUcdgiScy7U2iVUXr3mQbwKB3j7FSVkEHm" id="myInput">
+                                    <button id="submit" onclick="myWalletAddress()">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" id="submit" value="Submit">
+
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/tab.js"></script>
+    <script src="assets/js/paycheck.js"> </script>
+
+    <script>
+        function openPay(evt, payName) {
+          var i, paycontent;
+          paycontent = document.getElementsByClassName("paycontent");
+          for (i = 0; i < paycontent.length; i++) {
+            paycontent[i].style.display = "none";
+          }
+          
+          document.getElementById(payName).style.display = "flex";
+        }
+        </script>
+</body>
+
+</html>
